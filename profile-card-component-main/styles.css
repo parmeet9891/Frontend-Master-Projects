@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --primary-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --fs: 112.5%;
+  --font-bold: 700;
+  --font-regular: 400;
+}
+
+.container {
+  background-color: var(--dark-cyan);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs);
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: var(--font-regular);
+  overflow: hidden;
+}
+
+.sides {
+  position: relative;
+  display: flex;
+}
+
+.circle {
+  position: absolute;
+}
+
+.sides__top {
+  top: -35rem;
+  right: 1rem;
+}
+
+.sides__bottom {
+  top: 10rem;
+  right: -45rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  z-index: 999;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: -1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.profile-img {
+  margin: 0 auto;
+  margin-top: -2rem;
+  height: 100px;
+  width: 100px;
+  border: 6px solid white;
+  outline: none;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gray--bold--text {
+  font-size: 0.9rem;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+.light--text {
+  color: var(--gray-blue);
+  font-weight: var(--font-regular);
+}
+
+.country {
+  margin-bottom: 1.2rem;
+}
+
+.country > * {
+  font-size: 0.8rem;
+}
+
+.stats {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 0.1px solid var(--dark-gray);
+}
+
+.stats--name {
+  font-size: 0.5rem;
+  padding: 0.3rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.attribution {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 376px) {
+  .card {
+    max-width: 300px;
+  }
+  .sides__top {
+    right: -5rem;
+  }
+  .sides__bottom {
+    top: 6rem;
+  }
+}
