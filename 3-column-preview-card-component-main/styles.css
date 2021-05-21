@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --dark-cyan-2: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --regular-white: #fff;
+  --light-gray: hsl(0, 0%, 95%);
+  --ff-l: "Lexend", sans-serif;
+  --ff-bg: "Big Shoulders Display", sans-serif;
+}
+
+body {
+  font-size: 93.75%;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 18rem;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  color: var(--regular-white);
+}
+
+.card--image {
+  margin-bottom: 1rem;
+}
+
+.heading--text {
+  font-family: var(--ff-bg);
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.content {
+  color: var(--white);
+  font-family: var(--ff-l);
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.content--para {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--bright-orange);
+  background-color: white;
+  font-family: var(--ff-l);
+  font-weight: bold;
+  padding: 0.7rem 2rem;
+  border-radius: 1.5rem;
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--dark-cyan-2);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.btn-suv,
+.btn-luxury {
+  color: var(--dark-cyan);
+}
+
+@media (max-width: 600px) {
+  .cards--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    max-width: 350px;
+  }
+  .sedan {
+    border-top-right-radius: 0.2rem;
+    border-bottom-left-radius: 0;
+  }
+  .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
