@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script src="app.js" defer></script>
+  </head>
+  <body id="body">
+    <div class="container">
+      <header class="header" id="header">
+        <div class="desc">
+          <p class="desc__heading">Social Media Dashboard</p>
+          <p class="desc__text theme-text">Total Followers: 23,004</p>
+        </div>
+        <div class="line"></div>
+        <div class="toggle-btn">
+          <label for="checkbox" class="theme-text toggle-label"
+            >Dark Mode</label
+          >
+          <input type="checkbox" id="checkbox" />
+        </div>
+      </header>
+      <div class="card-section">
+        <div class="card fb-card" id="card">
+          <div class="handle">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook-icon"
+              class="img"
+            />
+            <p class="theme-text user-name">@nathanf</p>
+          </div>
+          <p class="followers">1987</p>
+          <p class="followers__text theme-text">followers</p>
+          <div class="stats">
+            <img
+              src="./images/icon-up.svg"
+              alt="arrow pointing upwards"
+              class="img"
+            />
+            <p class="time green-clr">12 Today</p>
+          </div>
+        </div>
+
+        <div class="card twitter-card" id="card">
+          <div class="handle">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter-icon"
+              class="img"
+            />
+            <p class="theme-text user-name">@nathanf</p>
+          </div>
+          <p class="followers">1044</p>
+          <p class="followers__text theme-text">followers</p>
+          <div class="stats">
+            <img
+              src="./images/icon-up.svg"
+              alt="arrow pointing upwards"
+              class="img"
+            />
+            <p class="time green-clr">99 Today</p>
+          </div>
+        </div>
+
+        <div class="card insta-card" id="card">
+          <div class="handle">
+            <img
+              src="./images/icon-instagram.svg"
+              alt="instagram-icon"
+              class="img"
+            />
+            <p class="theme-text user-name">@realnathanf</p>
+          </div>
+          <p class="followers">11k</p>
+          <p class="followers__text theme-text">followers</p>
+          <div class="stats">
+            <img
+              src="./images/icon-up.svg"
+              alt="arrow pointing upwards"
+              class="img"
+            />
+            <p class="time green-clr">1099 Today</p>
+          </div>
+        </div>
+
+        <div class="card youtube-card" id="card">
+          <div class="handle">
+            <img
+              src="./images/icon-youtube.svg"
+              alt="youtube-icon"
+              class="img"
+            />
+            <p class="theme-text user-name">Nathan F.</p>
+          </div>
+          <p class="followers">8239</p>
+          <p class="followers__text theme-text">subscribers</p>
+          <div class="stats">
+            <img
+              src="./images/icon-down.svg"
+              alt="arrow pointing downwards"
+              class="img"
+            />
+            <p class="time red-clr">144 Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="overview-heading">
+        <p class="overview-heading__text">Overview - Today</p>
+      </div>
+      <div class="stats-card-section">
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Page Views</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">87</p>
+            <div class="stats">
+              <img
+                src="./images/icon-up.svg"
+                alt="arrow pointing upwards"
+                class="img"
+              />
+              <p class="time green-clr">3%</p>
+            </div>
+          </div>
+        </div>
+        <!--Second-->
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Likes</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">52</p>
+            <div class="stats">
+              <img
+                src="./images/icon-down.svg"
+                alt="arrow pointing downwards"
+                class="img"
+              />
+              <p class="time red-clr">2%</p>
+            </div>
+          </div>
+        </div>
+        <!--Third-->
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Likes</p>
+            <img
+              src="./images/icon-instagram.svg"
+              alt="Instagram logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">5462</p>
+            <div class="stats">
+              <img
+                src="./images/icon-up.svg"
+                alt="arrow pointing upwards"
+                class="img"
+              />
+              <p class="time green-clr">2257%</p>
+            </div>
+          </div>
+        </div>
+        <!--Fourth-->
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Profile Views</p>
+            <img
+              src="./images/icon-instagram.svg"
+              alt="Instagram logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">52k</p>
+            <div class="stats">
+              <img
+                src="./images/icon-up.svg"
+                alt="arrow pointing upwards"
+                class="img"
+              />
+              <p class="time green-clr">1375%</p>
+            </div>
+          </div>
+        </div>
+        <!--Fifth-->
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Retweets</p>
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">117</p>
+            <div class="stats">
+              <img
+                src="./images/icon-up.svg"
+                alt="arrow pointing upwards"
+                class="img"
+              />
+              <p class="time green-clr">303%</p>
+            </div>
+          </div>
+        </div>
+        <!--Sixth-->
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Likes</p>
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">507</p>
+            <div class="stats">
+              <img
+                src="./images/icon-up.svg"
+                alt="arrow pointing upwards"
+                class="img"
+              />
+              <p class="time green-clr">553%</p>
+            </div>
+          </div>
+        </div>
+        <!--Seventh-->
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Likes</p>
+            <img
+              src="./images/icon-youtube.svg"
+              alt="Youtube logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">107</p>
+            <div class="stats">
+              <img
+                src="./images/icon-down.svg"
+                alt="arrow pointing downwards"
+                class="img"
+              />
+              <p class="time red-clr">19%</p>
+            </div>
+          </div>
+        </div>
+        <!--Eight-->
+        <div class="stats__cards" id="card">
+          <div class="views">
+            <p class="theme-text page-views">Total Views</p>
+            <img
+              src="./images/icon-youtube.svg"
+              alt="Youtube logo"
+              class="img"
+            />
+          </div>
+          <div class="numbers">
+            <p class="number__text">14 07</p>
+            <div class="stats">
+              <img
+                src="./images/icon-down.svg"
+                alt="arrow pointing downwards"
+                class="img"
+              />
+              <p class="time red-clr">12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
