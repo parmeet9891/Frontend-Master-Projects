@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+  --linear-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --light-border-bottom: 1px solid var(--light-grayish-blue);
+  --white-border-bottom: 1px solid white;
+}
+
+body {
+  font-size: 93.75%;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--very-light-grayish-blue);
+  color: var(--grayish-blue);
+  background-image: url(./images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 400px 400px;
+}
+
+header {
+  margin-top: 3rem;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.heading {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.toggle_switch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.toggle_first,
+.toggle_second {
+  font-size: 0.8rem;
+  color: var(--light-grayish-blue);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  outline: none;
+  width: 45px;
+  height: 25px;
+  border-radius: 22px;
+  background: var(--linear-gradient);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  transform: translateY(2.3px) translateX(2.5px);
+  transition: 400ms;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(22px) translateY(2px);
+}
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+  padding: 1rem 2rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+
+.intro {
+  font-size: 0.7rem;
+}
+
+.amount {
+  padding: 1rem;
+  color: var(--dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  transition: all 1s;
+}
+
+.card__features > li {
+  padding: 0.8rem;
+  font-size: 0.65rem;
+  border-bottom: var(--light-border-bottom);
+}
+
+.card__button {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  width: 100%;
+  padding: 0.6rem;
+  color: white;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: 0.2rem;
+  transition: all 0.4s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.card--light {
+  background: white;
+}
+
+.card--light > h2 {
+  border-bottom: var(--light-border-bottom);
+}
+
+.card--professional {
+  background: linear-gradient(
+    to bottom,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: white;
+}
+
+.card--professional > .amount {
+  color: white;
+}
+
+.card__button--professional {
+  background: white;
+  color: hsl(237, 63%, 64%);
+}
+
+.card--professional > h2,
+.card--professional > .card__features > li {
+  border-bottom: var(--white-border-bottom);
+}
+
+/*------------ACTIVE STATE------------*/
+.card__button:hover {
+  border: 1px solid hsl(237, 63%, 64%);
+  background: white;
+  color: hsl(237, 63%, 64%);
+}
+
+.card__button--professional:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+/*--------------MEDIA QUERIES--------------*/
+@media (min-width: 1024px) {
+  body {
+    background: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 100%, 10%;
+    background-position-y: -100px, bottom;
+    background-color: var(--very-light-grayish-blue);
+  }
+  header {
+    margin-top: 0;
+  }
+  .heading {
+    font-size: 1.2rem;
+  }
+  .toggle_switch {
+    margin-top: 2rem;
+  }
+  .toggle_first,
+  .toggle_second {
+    font-size: 0.7rem;
+  }
+  main {
+    flex-direction: row;
+  }
+  .card {
+    transition: all 0.4s;
+  }
+  .card--light {
+    padding: 1rem 2rem;
+  }
+  .card--professional {
+    padding: 2rem;
+  }
+}
