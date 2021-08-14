@@ -1,0 +1,51 @@
+@media screen and (min-width: 1000px) {
+  body {
+    background: url("./../images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $primary-red;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+
+    .content {
+      max-width: 600px;
+      .heading {
+        width: 100%;
+        text-align: left;
+        font-size: 3rem;
+      }
+      .desc {
+        text-align: left;
+        font-size: 1.1rem;
+        width: 100%;
+      }
+    }
+    .form-content {
+      width: 450px;
+
+      .inp-form {
+        padding: 2rem;
+        .field {
+          margin-top: 1.2rem;
+        }
+        .error {
+          border: 1px solid $primary-red;
+        }
+        .terms {
+          width: 100%;
+          p {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+  background: url(./../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ff7a7a;
+  line-height: 1.2;
+}
+
+main {
+  text-align: center;
+  margin: 4rem 0.5rem 3rem 0.5rem;
+  color: white;
+}
+
+main .content .heading {
+  font-size: 1.2rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+main .content .desc {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 400;
+  width: 70%;
+  margin: 1rem auto 2rem auto;
+  line-height: 1.5;
+}
+
+main .form-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .form-content .trial {
+  background: #6055a5;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+main .form-content .trial .text {
+  width: 65%;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+main .form-content .trial .text .bld {
+  font-weight: 700;
+  opacity: 1;
+}
+
+main .form-content .inp-form {
+  margin-top: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+main .form-content .inp-form .field {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+main .form-content .inp-form .error {
+  border: 1px solid #ff7a7a;
+}
+
+main .form-content .inp-form ::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+main .form-content .inp-form :-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+main .form-content .inp-form ::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+main .form-content .inp-form ::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+main .form-content .inp-form .btn {
+  display: block;
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  background: #38cc8c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 3px rgba(56, 204, 140, 0.8);
+          box-shadow: 0px 3px rgba(56, 204, 140, 0.8);
+}
+
+main .form-content .inp-form .terms {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+main .form-content .inp-form .terms p {
+  color: #ccc;
+  margin-top: 0.7rem;
+  font-size: 0.5rem;
+}
+
+main .form-content .inp-form .terms p .special {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: url("./../images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ff7a7a;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+  main .content {
+    max-width: 600px;
+  }
+  main .content .heading {
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+  }
+  main .content .desc {
+    text-align: left;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  main .form-content {
+    width: 450px;
+  }
+  main .form-content .inp-form {
+    padding: 2rem;
+  }
+  main .form-content .inp-form .field {
+    margin-top: 1.2rem;
+  }
+  main .form-content .inp-form .error {
+    border: 1px solid #ff7a7a;
+  }
+  main .form-content .inp-form .terms {
+    width: 100%;
+  }
+  main .form-content .inp-form .terms p {
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
